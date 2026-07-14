@@ -1,0 +1,10 @@
+[     309ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=7523acfe:20100
+[  287794ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=7523acfe:20100
+[  289393ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=7523acfe:20100
+[  289435ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:5173/?token=U9Br9ZQQKW5m' failed: Error during WebSocket handshake: Unexpected response code: 400 @ http://127.0.0.1:5173/@vite/client:801
+[  289750ms] [ERROR] WebSocket connection to 'ws://localhost:5173/?token=U9Br9ZQQKW5m' failed: Error during WebSocket handshake: Unexpected response code: 400 @ http://127.0.0.1:5173/@vite/client:814
+[  289751ms] [ERROR] [vite] failed to connect to websocket.
+your current setup:
+  (browser) 127.0.0.1:5173/ <--[HTTP]--> localhost:5173/ (server)
+  (browser) 127.0.0.1:5173/ <--[WebSocket (failing)]--> localhost:5173/ (server)
+Check out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr . @ http://127.0.0.1:5173/@vite/client:829

@@ -1,0 +1,9 @@
+[2m오후 2:28:41[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "./pages/teacher/TeacherPages" from "src/App.tsx". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/user/Desktop/frontend/project/WHATTING-Frontend/src/App.tsx[39m:15:7
+[33m  29 |    TeacherStudentConfirmPage,
+  30 |    TeacherStudentListPage
+  31 |  } from "./pages/teacher/TeacherPages";
+     |          ^
+  32 |  function App() {
+  33 |    return /* @__PURE__ */ jsxDEV(Fragment, { children: [[39m

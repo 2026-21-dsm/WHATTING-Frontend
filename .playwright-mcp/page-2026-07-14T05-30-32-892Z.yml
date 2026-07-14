@@ -1,0 +1,19 @@
+- main [ref=e4]:
+  - generic [ref=e5]: 9:41
+  - generic [ref=e11]: 왓팅!
+  - generic [ref=e14]:
+    - heading "로그인" [level=1] [ref=e15]
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: 이름
+          - paragraph [ref=e22]: 실명 입력
+        - generic [ref=e23]:
+          - generic [ref=e24]: 비밀번호
+          - paragraph [ref=e27]: 8자 이상 입력
+      - link "로그인" [ref=e28] [cursor=pointer]:
+        - /url: /teacher/home
+      - paragraph [ref=e29]:
+        - text: 계정이 없으신가요?
+        - link "회원가입" [ref=e30] [cursor=pointer]:
+          - /url: /teacher/signup
