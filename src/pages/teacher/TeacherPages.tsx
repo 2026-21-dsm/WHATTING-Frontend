@@ -176,7 +176,7 @@ function helpRequestsToSections(items: HelpRequestSummary[]): RosterSectionData[
         helpRequestId: item.helpRequestId,
         name: item.studentName,
         className: `${item.grade}-${item.classNumber}`,
-        status: item.status === "UNCHECKED" ? "도움 필요" : item.status === "ACKNOWLEDGED" ? "확인됨" : "해결됨",
+        status: item.helpStatus === "UNCHECKED" ? "도움 필요" : item.helpStatus === "ACKNOWLEDGED" ? "확인됨" : "해결됨",
         note: item.locationText,
         tone: "urgent",
       })),
@@ -304,9 +304,8 @@ export function TeacherSignupPage() {
     setSubmitting(true);
     setError(null);
     try {
-      await signupTeacher(form);
-      await loginTeacher({ name: form.name, password: form.password });
-      navigate("/teacher/home");
+      const result = await signupTeacher(form);
+      navigate("accessToken" in result ? "/teacher/home" : "/teacher/login");
     } catch (caught) {
       setError(toUserMessage(caught));
     } finally {
@@ -793,17 +792,18 @@ export function TeacherHelpDetailPage() {
     };
   }, [activeAlert?.alertId, helpRequestId]);
 
-  const nextStatus = detail?.status === "UNCHECKED" ? "ACKNOWLEDGED" : detail?.status === "ACKNOWLEDGED" ? "RESOLVED" : undefined;
+  const nextStatus =
+    detail?.helpStatus === "UNCHECKED" ? "ACKNOWLEDGED" : detail?.helpStatus === "ACKNOWLEDGED" ? "RESOLVED" : undefined;
   const handleStatusChange = async () => {
     if (!activeAlert?.alertId || !helpRequestId || !nextStatus) return;
     setSubmitting(true);
     setError(null);
     try {
       const result = await updateHelpRequestStatus(activeAlert.alertId, helpRequestId, {
-        status: nextStatus,
+        helpStatus: nextStatus,
         resolutionNote: nextStatus === "RESOLVED" ? "교사 확인 후 해결 처리" : undefined,
       });
-      setDetail(result);
+      setDetail((current) => (current ? { ...current, ...result } : current));
     } catch (caught) {
       setError(toUserMessage(caught));
     } finally {
@@ -815,11 +815,12 @@ export function TeacherHelpDetailPage() {
     ? helpRequestsToSections([
         {
           helpRequestId: detail.helpRequestId,
-          studentName: detail.studentName,
-          grade: detail.grade,
-          classNumber: detail.classNumber,
-          studentNumber: detail.studentNumber,
-          status: detail.status,
+          studentName: detail.student.name,
+          grade: detail.student.grade,
+          classNumber: detail.student.classNumber,
+          studentNumber: detail.student.studentNumber,
+          studentStatus: detail.studentStatus,
+          helpStatus: detail.helpStatus,
           locationText: detail.locationText,
           category: detail.category,
           createdAt: detail.createdAt,
@@ -841,7 +842,7 @@ export function TeacherHelpDetailPage() {
           </DetailCard>
           <StatusStepGrid>
             {Object.entries(helpStatusLabels).map(([status, label]) => (
-              <StatusStep key={status} data-active={detail?.status === status}>
+              <StatusStep key={status} data-active={detail?.helpStatus === status}>
                 <span />
                 {label}
               </StatusStep>
@@ -1031,15 +1032,15 @@ export function TeacherResultPage() {
               </Metric>
               <Metric data-tone="danger">
                 <span>도움요청</span>
-                <strong>{summary?.helpRequestedCount ?? 0}</strong>
+                <strong>{summary?.studentStatus.helpRequestedCount ?? 0}</strong>
               </Metric>
               <Metric data-tone="safe">
                 <span>확인</span>
-                <strong>{summary?.confirmedCount ?? 0}</strong>
+                <strong>{summary?.teacherConfirmation.confirmedCount ?? 0}</strong>
               </Metric>
               <Metric data-tone="warning">
                 <span>미확인</span>
-                <strong>{summary?.unconfirmedCount ?? 0}</strong>
+                <strong>{summary?.teacherConfirmation.unconfirmedCount ?? 0}</strong>
               </Metric>
             </MetricsGrid>
             <ProgressBlock style={{ "--progress": `${progress}%` } as CSSProperties}>

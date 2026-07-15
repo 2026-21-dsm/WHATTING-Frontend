@@ -1,5 +1,6 @@
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "/api/v1";
 const TOKEN_KEY = "whatting.accessToken";
+const REFRESH_TOKEN_KEY = "whatting.refreshToken";
 const USER_KEY = "whatting.user";
 
 export type ApiErrorPayload = {
@@ -23,13 +24,19 @@ export function getAccessToken() {
   return localStorage.getItem(TOKEN_KEY);
 }
 
-export function saveSession(accessToken: string, user: unknown) {
+export function getRefreshToken() {
+  return localStorage.getItem(REFRESH_TOKEN_KEY);
+}
+
+export function saveSession(accessToken: string, user: unknown, refreshToken?: string) {
   localStorage.setItem(TOKEN_KEY, accessToken);
+  if (refreshToken) localStorage.setItem(REFRESH_TOKEN_KEY, refreshToken);
   localStorage.setItem(USER_KEY, JSON.stringify(user));
 }
 
 export function clearSession() {
   localStorage.removeItem(TOKEN_KEY);
+  localStorage.removeItem(REFRESH_TOKEN_KEY);
   localStorage.removeItem(USER_KEY);
 }
 
