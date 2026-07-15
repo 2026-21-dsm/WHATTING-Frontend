@@ -5,6 +5,7 @@ import { theme } from "../../styles/theme";
 import whattingLogo from "../../../whatting_logo.svg";
 
 type BottomTab = "home" | "students" | "alerts";
+type ShellRole = "teacher" | "student";
 
 type MobileShellProps = {
   children: ReactNode;
@@ -13,13 +14,21 @@ type MobileShellProps = {
   showProfile?: boolean;
   bottomTab?: BottomTab;
   tall?: boolean;
+  role?: ShellRole;
 };
 
-const tabItems: Array<{ key: BottomTab; label: string; to: string }> = [
-  { key: "home", label: "홈", to: "/teacher/active" },
-  { key: "students", label: "명단", to: "/teacher/students" },
-  { key: "alerts", label: "알림", to: "/teacher/help" },
-];
+const roleTabItems: Record<ShellRole, Array<{ key: BottomTab; label: string; to: string }>> = {
+  teacher: [
+    { key: "home", label: "홈", to: "/teacher/active" },
+    { key: "students", label: "명단", to: "/teacher/students" },
+    { key: "alerts", label: "알림", to: "/teacher/help" },
+  ],
+  student: [
+    { key: "home", label: "홈", to: "/student/home" },
+    { key: "alerts", label: "알림", to: "/student/alerts" },
+    { key: "students", label: "도움 요청", to: "/student/help/new" },
+  ],
+};
 
 export function AppStage({ children }: { children: ReactNode }) {
   return <Stage>{children}</Stage>;
@@ -32,6 +41,7 @@ export function MobileShell({
   showProfile = false,
   bottomTab,
   tall = false,
+  role = "teacher",
 }: MobileShellProps) {
   return (
     <Phone data-tall={tall}>
@@ -43,7 +53,7 @@ export function MobileShell({
         </Header>
       )}
       <Content data-with-nav={Boolean(bottomTab)}>{children}</Content>
-      {bottomTab && <BottomNavigation active={bottomTab} />}
+      {bottomTab && <BottomNavigation active={bottomTab} role={role} />}
       <HomeIndicator />
     </Phone>
   );
@@ -62,10 +72,10 @@ function StatusBar() {
   );
 }
 
-function BottomNavigation({ active }: { active: BottomTab }) {
+function BottomNavigation({ active, role }: { active: BottomTab; role: ShellRole }) {
   return (
-    <BottomNav aria-label="교사 하단 탭">
-      {tabItems.map((item) => (
+    <BottomNav aria-label={role === "student" ? "학생 하단 탭" : "교사 하단 탭"}>
+      {roleTabItems[role].map((item) => (
         <BottomNavLink
           key={item.key}
           to={item.to}
