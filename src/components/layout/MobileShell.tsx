@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "@emotion/styled";
+import { useNow } from "../../hooks/useNow";
 import { theme } from "../../styles/theme";
 import whattingLogo from "../../../whatting_logo.svg";
 import profileIcon from "../../assets/icons/profile.svg";
@@ -96,9 +97,12 @@ export function MobileShell({
 }
 
 function StatusBar() {
+  const now = useNow();
+  const time = `${now.getHours()}:${String(now.getMinutes()).padStart(2, "0")}`;
+
   return (
     <Status aria-hidden="true">
-      <span>9:41</span>
+      <span>{time}</span>
       <StatusIcons>
         <SignalIcon src={statusSignalIcon} alt="" aria-hidden="true" />
         <WifiIcon src={statusWifiIcon} alt="" aria-hidden="true" />

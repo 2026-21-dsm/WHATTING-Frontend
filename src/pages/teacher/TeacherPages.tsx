@@ -43,6 +43,7 @@ import { StudentRoster } from "../../components/ui/StudentRoster";
 import type { RosterSectionData } from "../../components/ui/StudentRoster";
 import { alertTypes } from "../../data/teacherMock";
 import type { AlertTone } from "../../data/teacherMock";
+import { useNow } from "../../hooks/useNow";
 import { theme } from "../../styles/theme";
 import alertDrillIcon from "../../assets/icons/alert-drill.svg";
 import alertInspectionIcon from "../../assets/icons/alert-inspection.svg";
@@ -107,6 +108,23 @@ function formatDateTime(value?: string) {
     hour: "2-digit",
     minute: "2-digit",
   }).format(new Date(value));
+}
+
+function formatLiveDate(value: Date) {
+  return new Intl.DateTimeFormat("ko-KR", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    weekday: "long",
+  }).format(value);
+}
+
+function formatLiveTime(value: Date) {
+  return new Intl.DateTimeFormat("ko-KR", {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+  }).format(value);
 }
 
 function studentsToSections(students: AlertStudent[]): RosterSectionData[] {
@@ -341,6 +359,7 @@ export function TeacherHomePage() {
   const savedUser = getSavedUser<TeacherUser>();
   const { data: me } = useActiveUser(savedUser);
   const { data: activeAlert, error } = useActiveAlert(5000);
+  const now = useNow();
   const teacher = me ?? savedUser;
 
   return (
@@ -355,11 +374,11 @@ export function TeacherHomePage() {
             <MetaRow>
               <span>
                 <img src={metaCalendarIcon} alt="" aria-hidden="true" />
-                2024년 5월 24일 금요일
+                {formatLiveDate(now)}
               </span>
               <span>
                 <img src={metaClockIcon} alt="" aria-hidden="true" />
-                오전 9:10
+                {formatLiveTime(now)}
               </span>
             </MetaRow>
             <SchoolName>{teacher?.schoolName ?? "대덕소프트웨어마이스터고등학교"}</SchoolName>
@@ -400,6 +419,7 @@ export function TeacherAlertDashboardPage() {
   const { data: activeAlert, error: alertError } = useActiveAlert(5000);
   const savedUser = getSavedUser<TeacherUser>();
   const { data: me } = useActiveUser(savedUser);
+  const now = useNow();
   const [error, setError] = useState<string | null>(null);
   const [closing, setClosing] = useState(false);
   const teacher = me ?? savedUser;
@@ -430,11 +450,11 @@ export function TeacherAlertDashboardPage() {
             <MetaRow>
               <span>
                 <img src={metaCalendarIcon} alt="" aria-hidden="true" />
-                2024년 5월 24일 금요일
+                {formatLiveDate(now)}
               </span>
               <span>
                 <img src={metaClockIcon} alt="" aria-hidden="true" />
-                오전 9:10
+                {formatLiveTime(now)}
               </span>
             </MetaRow>
             <SchoolName>{teacher?.schoolName ?? "대덕소프트웨어마이스터고등학교"}</SchoolName>
