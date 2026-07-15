@@ -1,15 +1,42 @@
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import { rosterSections } from "../../data/teacherMock";
+import type { StudentTone } from "../../data/teacherMock";
 import { theme } from "../../styles/theme";
 
 type StudentRosterProps = {
   compact?: boolean;
   onlyUrgent?: boolean;
+  sections?: RosterSectionData[];
+  onConfirmStudent?: (studentId: string, confirmed: boolean) => void;
 };
 
-export function StudentRoster({ compact = false, onlyUrgent = false }: StudentRosterProps) {
-  const sections = onlyUrgent ? rosterSections.filter((section) => section.tone === "urgent") : rosterSections;
+export type RosterStudent = {
+  id?: string;
+  helpRequestId?: string;
+  name: string;
+  className: string;
+  status: string;
+  note?: string;
+  tone: StudentTone;
+  confirmed?: boolean;
+};
+
+export type RosterSectionData = {
+  title: string;
+  tone: StudentTone;
+  showAction?: boolean;
+  students: RosterStudent[];
+};
+
+export function StudentRoster({
+  compact = false,
+  onlyUrgent = false,
+  sections: providedSections,
+  onConfirmStudent,
+}: StudentRosterProps) {
+  const sourceSections: RosterSectionData[] = providedSections ?? rosterSections;
+  const sections = onlyUrgent ? sourceSections.filter((section) => section.tone === "urgent") : sourceSections;
 
   return (
     <Roster data-compact={compact}>
@@ -18,7 +45,7 @@ export function StudentRoster({ compact = false, onlyUrgent = false }: StudentRo
           <SectionTitle>{section.title}</SectionTitle>
           {section.students.map((student, index) => (
             <StudentRow key={`${section.title}-${student.name}-${index}`} data-tone={student.tone}>
-              <StudentIcon data-tone={student.tone} />
+              <StudentCheck data-tone={student.tone} data-checked={student.confirmed || student.tone === "safe"} />
               <StudentCopy>
                 <StudentNameLine>
                   <strong>{student.name}</strong>
@@ -29,7 +56,14 @@ export function StudentRoster({ compact = false, onlyUrgent = false }: StudentRo
                   {student.note && <small> · {student.note}</small>}
                 </StudentStatus>
               </StudentCopy>
-              {section.showAction && <RowAction to="/teacher/help/detail">상태 확인</RowAction>}
+              {section.showAction && student.helpRequestId && (
+                <RowAction to={`/teacher/help/${student.helpRequestId}`}>상태 확인</RowAction>
+              )}
+              {!section.showAction && student.id && onConfirmStudent && (
+                <RowButton type="button" onClick={() => onConfirmStudent(student.id!, !student.confirmed)}>
+                  {student.confirmed ? "확인 취소" : "상태 확인"}
+                </RowButton>
+              )}
             </StudentRow>
           ))}
         </RosterSection>
@@ -41,6 +75,7 @@ export function StudentRoster({ compact = false, onlyUrgent = false }: StudentRo
 const Roster = styled.section`
   display: flex;
   flex-direction: column;
+  background: ${theme.colors.bg};
 
   &[data-compact="true"] {
     border-top: 1px solid ${theme.colors.border};
@@ -48,11 +83,11 @@ const Roster = styled.section`
 `;
 
 const RosterSection = styled.section`
-  background: ${theme.colors.panelDeep};
+  background: ${theme.colors.bg};
   border-top: 1px solid ${theme.colors.border};
 
   &[data-tone="urgent"] {
-    background: rgba(255, 180, 171, 0.05);
+    background: rgba(127, 29, 29, 0.14);
   }
 `;
 
@@ -70,12 +105,12 @@ const SectionTitle = styled.h2`
 `;
 
 const StudentRow = styled.div`
-  min-height: 82px;
+  min-height: 92px;
   display: grid;
-  grid-template-columns: 44px minmax(0, 1fr) auto;
+  grid-template-columns: 22px minmax(0, 1fr) auto;
   align-items: center;
-  gap: 16px;
-  padding: 16px;
+  gap: 14px;
+  padding: 18px 16px;
   border-top: 1px solid ${theme.colors.border};
   position: relative;
 
@@ -90,54 +125,40 @@ const StudentRow = styled.div`
   }
 `;
 
-const StudentIcon = styled.span`
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
-  border-radius: ${theme.radius.sm};
-  border: 1px solid ${theme.colors.border};
-  background: #2a2a2d;
-  color: ${theme.colors.textSoft};
+const StudentCheck = styled.span`
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 3px;
+  border: 2px solid ${theme.colors.textMuted};
+  color: ${theme.colors.dangerSoft};
   position: relative;
 
   &[data-tone="urgent"] {
-    background: #332626;
+    border-color: ${theme.colors.dangerSoft};
     color: ${theme.colors.dangerSoft};
   }
 
   &[data-tone="moving"] {
-    background: #152523;
+    border-color: ${theme.colors.success};
     color: ${theme.colors.success};
   }
 
   &[data-tone="safe"] {
-    background: rgba(37, 99, 235, 0.1);
-    border-color: rgba(37, 99, 235, 0.28);
+    border-color: ${theme.colors.blue};
     color: ${theme.colors.blue};
   }
 
-  &::before {
-    content: "";
-    width: 18px;
-    height: 18px;
-    border: 2px solid currentColor;
-    border-radius: 50%;
-  }
-
-  &[data-tone="urgent"]::before {
-    border-radius: 4px;
-  }
-
-  &[data-tone="safe"]::after,
-  &[data-tone="moving"]::after {
+  &[data-checked="true"]::after {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 6px;
-    border-left: 2px solid currentColor;
-    border-bottom: 2px solid currentColor;
-    transform: rotate(-45deg);
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid currentColor;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
   }
 `;
 
@@ -198,10 +219,22 @@ const StudentStatus = styled.p`
 `;
 
 const RowAction = styled(Link)`
-  padding: 7px 10px;
-  border-radius: 7px;
-  background: #2a2a2d;
-  color: ${theme.colors.text};
+  padding: 8px 14px;
+  border: 2px solid ${theme.colors.dangerSoft};
+  border-radius: ${theme.radius.sm};
+  background: transparent;
+  color: ${theme.colors.dangerSoft};
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 800;
+`;
+
+const RowButton = styled.button`
+  padding: 8px 14px;
+  border: 2px solid ${theme.colors.dangerSoft};
+  border-radius: ${theme.radius.sm};
+  background: transparent;
+  color: ${theme.colors.dangerSoft};
   font-size: 12px;
   line-height: 18px;
   font-weight: 800;

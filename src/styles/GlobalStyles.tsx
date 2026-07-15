@@ -17,7 +17,14 @@ export function GlobalStyles() {
           -moz-osx-font-smoothing: grayscale;
         }
 
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+
         body {
+          margin: 0;
           min-width: 320px;
           min-height: 100vh;
           background:

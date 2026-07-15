@@ -1,0 +1,38 @@
+- main [ref=f44e4]:
+  - generic [ref=f44e5]: 9:41
+  - generic [ref=f44e12]:
+    - button "뒤로가기" [ref=f44e14]: ‹
+    - paragraph [ref=f44e15]: 재해 선택
+    - heading "경보 생성" [level=1] [ref=f44e16]
+    - generic [ref=f44e17]:
+      - button "실제 긴급 상황 즉시 대피 안내" [ref=f44e18] [cursor=pointer]:
+        - strong [ref=f44e20]: 실제 긴급 상황
+        - generic [ref=f44e21]: 즉시 대피 안내
+      - button "훈련 대비 훈련용" [ref=f44e22] [cursor=pointer]:
+        - strong [ref=f44e24]: 훈련
+        - generic [ref=f44e25]: 대비 훈련용
+      - button "점검 시스템 테스트" [ref=f44e26] [cursor=pointer]:
+        - strong [ref=f44e28]: 점검
+        - generic [ref=f44e29]: 시스템 테스트
+      - button "오작동 경보 정정" [ref=f44e30] [cursor=pointer]:
+        - strong [ref=f44e32]: 오작동
+        - generic [ref=f44e33]: 경보 정정
+    - generic [ref=f44e34]:
+      - generic [ref=f44e35]:
+        - generic [ref=f44e36]: 알림 제목
+        - textbox "알림 제목" [ref=f44e38]:
+          - /placeholder: 알림 제목입력
+          - text: 화재 대피 훈련
+      - generic [ref=f44e39]:
+        - generic [ref=f44e40]: 세부 지시 사항
+        - textbox "세부 지시 사항" [ref=f44e42]:
+          - /placeholder: 소속 학교 입력
+          - text: 운동장으로 대피하세요.
+    - button "경보 보내기" [ref=f44e43]
+  - navigation "교사 하단 탭" [ref=f44e44]:
+    - link "홈" [ref=f44e45] [cursor=pointer]:
+      - /url: /teacher/home
+    - link "명단" [ref=f44e48] [cursor=pointer]:
+      - /url: /teacher/students
+    - link "대시보드" [ref=f44e51] [cursor=pointer]:
+      - /url: /teacher/dashboard

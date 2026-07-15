@@ -1,0 +1,22 @@
+[     104ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=c3b085ac:20100
+[   30120ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=c3b085ac:20100
+[   32217ms] [LOG] [vite] server connection lost. Polling for restart... @ http://127.0.0.1:5173/@vite/client:963
+[   32393ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=c3b085ac:20100
+[   33025ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://127.0.0.1:5173/src/data/teacherMock.ts?t=1784076794373:0
+[   33025ms] [ERROR] [vite] Failed to reload /src/pages/teacher/TeacherPages.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:5173/@vite/client:881
+[   33067ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/alert-drill.svg?t=1784076794213&import:0
+[   33067ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/alert-inspection.svg?t=1784076794380&import:0
+[   33074ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/alert-real.svg?t=1784076794382&import:0
+[   33074ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/emergency-bell.svg?t=1784076794384&import:0
+[   33116ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/home-status-check.svg?t=1784076794394&import:0
+[   33168ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/meta-calendar.svg?t=1784076794397&import:0
+[   33175ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/meta-clock.svg?t=1784076794399&import:0
+[   33939ms] [LOG] [vite] server connection lost. Polling for restart... @ http://127.0.0.1:5173/@vite/client:963
+[   34082ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:5173/?token=IQ-CKGrJ9O0c' failed: Error during WebSocket handshake: Unexpected response code: 400 @ http://127.0.0.1:5173/@vite/client:801
+[   34163ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=c3b085ac:20100
+[   34396ms] [ERROR] WebSocket connection to 'ws://localhost:5173/?token=IQ-CKGrJ9O0c' failed: Error during WebSocket handshake: Unexpected response code: 400 @ http://127.0.0.1:5173/@vite/client:814
+[   34397ms] [ERROR] [vite] failed to connect to websocket.
+your current setup:
+  (browser) 127.0.0.1:5173/ <--[HTTP]--> localhost:5173/ (server)
+  (browser) 127.0.0.1:5173/ <--[WebSocket (failing)]--> localhost:5173/ (server)
+Check out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr . @ http://127.0.0.1:5173/@vite/client:829

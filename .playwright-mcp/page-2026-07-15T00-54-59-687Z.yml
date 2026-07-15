@@ -1,0 +1,66 @@
+- main [ref=f41e4]:
+  - generic [ref=f41e5]: 9:41
+  - generic [ref=f41e11]:
+    - generic [ref=f41e12]:
+      - generic [ref=f41e13]:
+        - heading "학생 안전 체크리스트" [level=1] [ref=f41e14]
+        - generic [ref=f41e15]: 전체 학년
+      - textbox "학생 검색" [ref=f41e16]:
+        - /placeholder: 이름 또는 학급 검색...
+      - generic [ref=f41e17]:
+        - button "전체" [ref=f41e18]
+        - button "도움 요청" [ref=f41e19]
+        - button "대피완료" [ref=f41e20]
+        - button "대피중" [ref=f41e21]
+        - button "응답없음" [ref=f41e22]
+        - button "확인완료" [ref=f41e23]
+    - generic [ref=f41e24]:
+      - generic [ref=f41e25]:
+        - heading "즉각 지원 필요 (2)" [level=2] [ref=f41e26]
+        - generic [ref=f41e29]:
+          - generic [ref=f41e30]:
+            - strong [ref=f41e31]: 권수현
+            - generic [ref=f41e32]: 2-1
+          - paragraph [ref=f41e33]:
+            - text: 도움 필요
+            - generic [ref=f41e34]: "· 마지막 위치: 과학실"
+        - generic [ref=f41e37]:
+          - generic [ref=f41e38]:
+            - strong [ref=f41e39]: 이지성
+            - generic [ref=f41e40]: 2-3
+          - paragraph [ref=f41e41]:
+            - text: 부상 신고
+            - generic [ref=f41e42]: "· 부상 부위: 발목"
+      - generic [ref=f41e43]:
+        - heading "대피 중 (1)" [level=2] [ref=f41e44]
+        - generic [ref=f41e47]:
+          - generic [ref=f41e48]:
+            - strong [ref=f41e49]: 박정우
+            - generic [ref=f41e50]: 2-1
+          - paragraph [ref=f41e51]: 대피 중
+      - generic [ref=f41e52]:
+        - heading "응답 대기 중 (1)" [level=2] [ref=f41e53]
+        - generic [ref=f41e56]:
+          - generic [ref=f41e57]:
+            - strong [ref=f41e58]: 박정우
+            - generic [ref=f41e59]: 2-1
+          - paragraph [ref=f41e60]: 응답 없음
+      - generic [ref=f41e61]:
+        - heading "대피 완료 (2)" [level=2] [ref=f41e62]
+        - generic [ref=f41e65]:
+          - generic [ref=f41e66]:
+            - strong [ref=f41e67]: 박정우
+            - generic [ref=f41e68]: 2-1
+          - paragraph [ref=f41e69]: 안전 확인됨
+        - generic [ref=f41e72]:
+          - generic [ref=f41e73]:
+            - strong [ref=f41e74]: 박정우
+            - generic [ref=f41e75]: 2-1
+          - paragraph [ref=f41e76]: 안전 확인됨
+  - navigation "교사 하단 탭" [ref=f41e77]:
+    - link "홈" [ref=f41e78] [cursor=pointer]:
+      - /url: /teacher/home
+    - link "명단" [ref=f41e81] [cursor=pointer]:
+      - /url: /teacher/students
+    - link "대시보드" [ref=f41e84] [cursor=pointer]:
+      - /url: /teacher/dashboard

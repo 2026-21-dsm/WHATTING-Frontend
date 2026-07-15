@@ -1,0 +1,27 @@
+- main [ref=f25e4]:
+  - generic [ref=f25e5]: 9:41
+  - generic [ref=f25e11]:
+    - img "왓팅" [ref=f25e12]
+    - button "내 정보" [ref=f25e13]
+  - generic [ref=f25e16]:
+    - generic [ref=f25e17]:
+      - paragraph [ref=f25e18]: 교사
+      - heading [level=1] [ref=f25e19]:
+        - text: 안녕하세요,
+        - strong [ref=f25e20]: 선생님 선생님
+      - generic [ref=f25e21]:
+        - generic [ref=f25e22]: 2024년 5월 24일 금요일
+        - generic [ref=f25e24]: 오전 9:10
+      - paragraph [ref=f25e26]: 대덕소프트웨어마이스터고등학교
+    - generic [ref=f25e30]:
+      - heading "활성 알림 없음" [level=2] [ref=f25e31]
+      - paragraph [ref=f25e32]: 현재 진행중인 경보가 없습니다.
+    - link "긴급 경보 생성" [ref=f25e33] [cursor=pointer]:
+      - /url: /teacher/alert/new
+  - navigation "교사 하단 탭" [ref=f25e35]:
+    - link "홈" [ref=f25e36] [cursor=pointer]:
+      - /url: /teacher/home
+    - link "명단" [ref=f25e39] [cursor=pointer]:
+      - /url: /teacher/students
+    - link "대시보드" [ref=f25e42] [cursor=pointer]:
+      - /url: /teacher/dashboard
