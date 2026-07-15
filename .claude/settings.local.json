@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__b756526b-a946-4fdd-b02e-bc153b98896b__get_design_context",
+      "mcp__b756526b-a946-4fdd-b02e-bc153b98896b__download_assets",
+      "Bash(curl -sL -o school.svg \"https://www.figma.com/api/mcp/asset/747fc45a-3f7c-49d6-b0ab-f6c1f204430c\")",
+      "Bash(curl -sL -o user.svg \"https://www.figma.com/api/mcp/asset/646883a5-9fd0-46a2-b7b8-a9cec25cce42\")",
+      "Bash(curl -sL -o lock.svg \"https://www.figma.com/api/mcp/asset/2d63abf5-7fcc-43ba-8286-d806a32f02b7\")",
+      "Bash(curl -sL -o eye-toggle.svg \"https://www.figma.com/api/mcp/asset/af0df5b4-0a56-42ce-89e1-e90ff8b67ace\")",
+      "Bash(curl -sL -o shield.svg \"https://www.figma.com/api/mcp/asset/3cb49676-77ad-408f-9e75-3ee40d3c048f\")",
+      "Bash(python3 -)"
+    ]
+  }
+}

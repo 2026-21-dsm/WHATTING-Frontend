@@ -1,4 +1,4 @@
-import type { ChangeEventHandler, ReactNode } from "react";
+import { useState, type ChangeEventHandler, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
@@ -13,12 +13,15 @@ type FieldProps = {
   label: string;
   placeholder: string;
   icon?: "user" | "lock" | "school" | "shield" | "text";
+  iconSrc?: string;
   large?: boolean;
   type?: "text" | "password" | "email" | "tel";
   name?: string;
   value?: string;
   required?: boolean;
   onChange?: ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
+  showPasswordToggle?: boolean;
+  toggleIconSrc?: string;
 };
 
 const fieldIcons = {
@@ -32,29 +35,36 @@ export function FormField({
   label,
   placeholder,
   icon = "text",
+  iconSrc,
   large = false,
   type,
   name,
   value,
   required,
   onChange,
+  showPasswordToggle = false,
+  toggleIconSrc,
 }: FieldProps) {
-  const inputType = type ?? (icon === "lock" || icon === "shield" ? "password" : "text");
-  const iconAsset = icon === "text" ? undefined : fieldIcons[icon];
-  const showPasswordEye = !large && inputType === "password";
+  const [passwordVisible, setPasswordVisible] = useState(false);
+  const baseType = type ?? (icon === "lock" || icon === "shield" ? "password" : "text");
+  const hasEye = !large && (showPasswordToggle || baseType === "password");
+  const inputType = hasEye ? (passwordVisible ? "text" : "password") : baseType;
+  const mappedIcon = icon === "text" ? undefined : fieldIcons[icon];
 
   return (
     <FieldLabel>
       <span>{label}</span>
       <FieldBox data-large={large}>
-        {iconAsset && (
+        {iconSrc ? (
+          <FieldIconImage src={iconSrc} alt="" aria-hidden="true" />
+        ) : mappedIcon ? (
           <FieldIcon
-            src={iconAsset.src}
+            src={mappedIcon.src}
             alt=""
             aria-hidden="true"
-            style={{ width: iconAsset.width, height: iconAsset.height }}
+            style={{ width: mappedIcon.width, height: mappedIcon.height }}
           />
-        )}
+        ) : null}
         {large ? (
           <FieldTextarea
             placeholder={placeholder}
@@ -75,14 +85,39 @@ export function FormField({
             onChange={onChange}
           />
         )}
-        {showPasswordEye && (
-          <EyeButton type="button" aria-label="비밀번호 보기">
-            <img src={fieldEyeIcon} alt="" aria-hidden="true" />
+        {hasEye && (
+          <EyeButton
+            type="button"
+            aria-label={passwordVisible ? "비밀번호 숨기기" : "비밀번호 보기"}
+            onClick={() => setPasswordVisible((visible) => !visible)}
+          >
+            <img src={toggleIconSrc ?? fieldEyeIcon} alt="" aria-hidden="true" />
           </EyeButton>
         )}
       </FieldBox>
     </FieldLabel>
   );
+}
+
+type CompactFieldProps = {
+  label: string;
+  placeholder: string;
+  name?: string;
+};
+
+export function CompactField({ label, placeholder, name }: CompactFieldProps) {
+  return (
+    <CompactFieldLabel>
+      <span>{label}</span>
+      <CompactFieldBox>
+        <CompactFieldInput name={name} placeholder={placeholder} inputMode="numeric" aria-label={label} />
+      </CompactFieldBox>
+    </CompactFieldLabel>
+  );
+}
+
+export function CompactFieldRow({ children }: { children: ReactNode }) {
+  return <CompactRow>{children}</CompactRow>;
 }
 
 export function PrimaryLink({
@@ -140,6 +175,7 @@ export const PrimaryButton = styled.button`
   line-height: 24px;
   font-weight: 800;
   text-align: center;
+  cursor: pointer;
 
   &:disabled {
     cursor: not-allowed;
@@ -150,6 +186,24 @@ export const PrimaryButton = styled.button`
 export const GhostLink = styled(Link)`
   color: ${theme.colors.text};
   font-weight: 800;
+`;
+
+export const GhostButton = styled.button`
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: ${theme.colors.text};
+  font-weight: 800;
+  font-size: inherit;
+  cursor: pointer;
+`;
+
+export const FormError = styled.p`
+  margin: 0;
+  color: ${theme.colors.dangerSoft};
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
 `;
 
 export const PillLink = styled(Link)`
@@ -272,4 +326,57 @@ const ActionBadge = styled.img`
   height: 21px;
   display: block;
   object-fit: contain;
+`;
+
+const FieldIconImage = styled.img`
+  display: block;
+  flex: 0 0 auto;
+  margin-top: 1px;
+`;
+
+const CompactRow = styled.div`
+  display: flex;
+  gap: 12px;
+  width: 100%;
+`;
+
+const CompactFieldLabel = styled.label`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: ${theme.colors.textSoft};
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+`;
+
+const CompactFieldBox = styled.div`
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: ${theme.radius.sm};
+  background: #161618;
+`;
+
+const CompactFieldInput = styled.input`
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: ${theme.colors.text};
+  caret-color: ${theme.colors.dangerSoft};
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  text-align: center;
+
+  &::placeholder {
+    color: rgba(141, 144, 160, 0.3);
+    opacity: 1;
+  }
 `;

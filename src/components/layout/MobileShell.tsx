@@ -15,7 +15,8 @@ import tabHomeIcon from "../../assets/icons/tab-home.svg";
 import tabStudentsActiveIcon from "../../assets/icons/tab-students-active.svg";
 import tabStudentsIcon from "../../assets/icons/tab-students.svg";
 
-type BottomTab = "home" | "students" | "dashboard";
+type BottomTab = "home" | "students" | "alerts" | "dashboard";
+type ShellRole = "teacher" | "student";
 
 type MobileShellProps = {
   children: ReactNode;
@@ -24,9 +25,10 @@ type MobileShellProps = {
   showProfile?: boolean;
   bottomTab?: BottomTab;
   tall?: boolean;
+  role?: ShellRole;
 };
 
-const tabItems: Array<{
+type TabItem = {
   key: BottomTab;
   label: string;
   to: string;
@@ -34,35 +36,68 @@ const tabItems: Array<{
   activeIcon: string;
   iconWidth: number;
   iconHeight: number;
-}> = [
-  {
-    key: "home",
-    label: "홈",
-    to: "/teacher/home",
-    icon: tabHomeIcon,
-    activeIcon: tabHomeActiveIcon,
-    iconWidth: 18,
-    iconHeight: 18,
-  },
-  {
-    key: "students",
-    label: "명단",
-    to: "/teacher/students",
-    icon: tabStudentsIcon,
-    activeIcon: tabStudentsActiveIcon,
-    iconWidth: 22,
-    iconHeight: 16,
-  },
-  {
-    key: "dashboard",
-    label: "대시보드",
-    to: "/teacher/dashboard",
-    icon: tabAlertIcon,
-    activeIcon: tabAlertActiveIcon,
-    iconWidth: 22,
-    iconHeight: 19,
-  },
-];
+};
+
+const roleTabItems: Record<ShellRole, TabItem[]> = {
+  teacher: [
+    {
+      key: "home",
+      label: "홈",
+      to: "/teacher/home",
+      icon: tabHomeIcon,
+      activeIcon: tabHomeActiveIcon,
+      iconWidth: 18,
+      iconHeight: 18,
+    },
+    {
+      key: "students",
+      label: "명단",
+      to: "/teacher/students",
+      icon: tabStudentsIcon,
+      activeIcon: tabStudentsActiveIcon,
+      iconWidth: 22,
+      iconHeight: 16,
+    },
+    {
+      key: "dashboard",
+      label: "대시보드",
+      to: "/teacher/dashboard",
+      icon: tabAlertIcon,
+      activeIcon: tabAlertActiveIcon,
+      iconWidth: 22,
+      iconHeight: 19,
+    },
+  ],
+  student: [
+    {
+      key: "home",
+      label: "홈",
+      to: "/student/home",
+      icon: tabHomeIcon,
+      activeIcon: tabHomeActiveIcon,
+      iconWidth: 18,
+      iconHeight: 18,
+    },
+    {
+      key: "alerts",
+      label: "알림",
+      to: "/student/alerts",
+      icon: tabAlertIcon,
+      activeIcon: tabAlertActiveIcon,
+      iconWidth: 22,
+      iconHeight: 19,
+    },
+    {
+      key: "students",
+      label: "도움 요청",
+      to: "/student/help/new",
+      icon: tabStudentsIcon,
+      activeIcon: tabStudentsActiveIcon,
+      iconWidth: 22,
+      iconHeight: 16,
+    },
+  ],
+};
 
 export function AppStage({ children }: { children: ReactNode }) {
   return <Stage>{children}</Stage>;
@@ -75,6 +110,7 @@ export function MobileShell({
   showProfile = false,
   bottomTab,
   tall = false,
+  role = "teacher",
 }: MobileShellProps) {
   return (
     <Phone data-tall={tall} data-with-nav={Boolean(bottomTab)}>
@@ -90,7 +126,7 @@ export function MobileShell({
         </Header>
       )}
       <Content data-with-nav={Boolean(bottomTab)}>{children}</Content>
-      {bottomTab && <BottomNavigation active={bottomTab} />}
+      {bottomTab && <BottomNavigation active={bottomTab} role={role} />}
       {!bottomTab && <HomeIndicator />}
     </Phone>
   );
@@ -112,10 +148,10 @@ function StatusBar() {
   );
 }
 
-function BottomNavigation({ active }: { active: BottomTab }) {
+function BottomNavigation({ active, role }: { active: BottomTab; role: ShellRole }) {
   return (
-    <BottomNav aria-label="교사 하단 탭">
-      {tabItems.map((item) => {
+    <BottomNav aria-label={role === "student" ? "학생 하단 탭" : "교사 하단 탭"}>
+      {roleTabItems[role].map((item) => {
         const isActive = active === item.key;
 
         return (
