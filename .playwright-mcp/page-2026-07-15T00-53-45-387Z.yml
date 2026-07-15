@@ -1,0 +1,22 @@
+- main [ref=f36e4]:
+  - generic [ref=f36e5]: 9:41
+  - generic [ref=f36e12]:
+    - generic [ref=f36e13]:
+      - heading "학생 안전 체크리스트" [level=1] [ref=f36e14]
+      - generic [ref=f36e15]: 전체 학년
+    - textbox "학생 검색" [ref=f36e16]:
+      - /placeholder: 이름 또는 학급 검색...
+    - generic [ref=f36e17]:
+      - button "전체" [ref=f36e18]
+      - button "도움 요청" [ref=f36e19]
+      - button "대피완료" [ref=f36e20]
+      - button "대피중" [ref=f36e21]
+      - button "응답없음" [ref=f36e22]
+      - button "확인완료" [ref=f36e23]
+  - navigation "교사 하단 탭" [ref=f36e24]:
+    - link "홈" [ref=f36e25] [cursor=pointer]:
+      - /url: /teacher/home
+    - link "명단" [ref=f36e28] [cursor=pointer]:
+      - /url: /teacher/students
+    - link "대시보드" [ref=f36e31] [cursor=pointer]:
+      - /url: /teacher/dashboard

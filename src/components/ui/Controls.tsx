@@ -1,7 +1,13 @@
-import { useState, type ReactNode } from "react";
+import { useState, type ChangeEventHandler, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
+import fieldEyeIcon from "../../assets/icons/field-eye.svg";
+import fieldLockIcon from "../../assets/icons/field-lock.svg";
+import fieldSchoolIcon from "../../assets/icons/field-school.svg";
+import fieldShieldIcon from "../../assets/icons/field-shield.svg";
+import fieldUserIcon from "../../assets/icons/field-user.svg";
+import signupBadgeIcon from "../../assets/icons/signup-badge.svg";
 
 type FieldProps = {
   label: string;
@@ -11,8 +17,18 @@ type FieldProps = {
   large?: boolean;
   type?: "text" | "password" | "email" | "tel";
   name?: string;
+  value?: string;
+  required?: boolean;
+  onChange?: ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
   showPasswordToggle?: boolean;
   toggleIconSrc?: string;
+};
+
+const fieldIcons = {
+  school: { src: fieldSchoolIcon, width: 30.333, height: 15 },
+  user: { src: fieldUserIcon, width: 25.333, height: 13.333 },
+  lock: { src: fieldLockIcon, width: 25.333, height: 17.5 },
+  shield: { src: fieldShieldIcon, width: 25.333, height: 16.667 },
 };
 
 export function FormField({
@@ -23,12 +39,17 @@ export function FormField({
   large = false,
   type,
   name,
+  value,
+  required,
+  onChange,
   showPasswordToggle = false,
   toggleIconSrc,
 }: FieldProps) {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const baseType = type ?? (icon === "lock" || icon === "shield" ? "password" : "text");
-  const resolvedType = showPasswordToggle ? (passwordVisible ? "text" : "password") : baseType;
+  const hasEye = !large && (showPasswordToggle || baseType === "password");
+  const inputType = hasEye ? (passwordVisible ? "text" : "password") : baseType;
+  const mappedIcon = icon === "text" ? undefined : fieldIcons[icon];
 
   return (
     <FieldLabel>
@@ -36,22 +57,42 @@ export function FormField({
       <FieldBox data-large={large}>
         {iconSrc ? (
           <FieldIconImage src={iconSrc} alt="" aria-hidden="true" />
-        ) : (
-          <FieldIcon data-icon={icon} aria-hidden="true" />
-        )}
+        ) : mappedIcon ? (
+          <FieldIcon
+            src={mappedIcon.src}
+            alt=""
+            aria-hidden="true"
+            style={{ width: mappedIcon.width, height: mappedIcon.height }}
+          />
+        ) : null}
         {large ? (
-          <FieldTextarea name={name} placeholder={placeholder} aria-label={label} />
+          <FieldTextarea
+            placeholder={placeholder}
+            aria-label={label}
+            name={name}
+            value={value}
+            required={required}
+            onChange={onChange}
+          />
         ) : (
-          <FieldInput name={name} placeholder={placeholder} aria-label={label} type={resolvedType} />
+          <FieldInput
+            placeholder={placeholder}
+            aria-label={label}
+            type={inputType}
+            name={name}
+            value={value}
+            required={required}
+            onChange={onChange}
+          />
         )}
-        {showPasswordToggle && (
-          <ToggleButton
+        {hasEye && (
+          <EyeButton
             type="button"
-            aria-label={passwordVisible ? "비밀번호 숨기기" : "비밀번호 표시"}
-            onClick={() => setPasswordVisible((value) => !value)}
+            aria-label={passwordVisible ? "비밀번호 숨기기" : "비밀번호 보기"}
+            onClick={() => setPasswordVisible((visible) => !visible)}
           >
-            {toggleIconSrc && <img src={toggleIconSrc} alt="" />}
-          </ToggleButton>
+            <img src={toggleIconSrc ?? fieldEyeIcon} alt="" aria-hidden="true" />
+          </EyeButton>
         )}
       </FieldBox>
     </FieldLabel>
@@ -90,7 +131,7 @@ export function PrimaryLink({
 }) {
   return (
     <PrimaryAction to={to}>
-      {icon && <ActionBadge aria-hidden="true" />}
+      {icon && <ActionBadge src={signupBadgeIcon} alt="" aria-hidden="true" />}
       {children}
     </PrimaryAction>
   );
@@ -135,6 +176,11 @@ export const PrimaryButton = styled.button`
   font-weight: 800;
   text-align: center;
   cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+  }
 `;
 
 export const GhostLink = styled(Link)`
@@ -249,125 +295,43 @@ const FieldTextarea = styled.textarea`
   }
 `;
 
-const FieldIcon = styled.span`
-  width: 16px;
-  height: 18px;
+const FieldIcon = styled.img`
   margin-top: 1px;
-  position: relative;
-  color: rgba(141, 144, 160, 0.65);
+  display: block;
+  object-fit: contain;
+  flex: 0 0 auto;
+`;
+
+const EyeButton = styled.button`
+  width: 42.333px;
+  min-height: 19.5px;
+  display: grid;
+  place-items: center;
+  padding: 0 12px;
+  margin: -1px -12px -1px 0;
+  border: 0;
+  background: transparent;
+  opacity: 0.4;
   flex: 0 0 auto;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-  }
-
-  &[data-icon="user"]::before {
-    left: 5px;
-    top: 1px;
-    width: 6px;
-    height: 6px;
-    border: 2px solid currentColor;
-    border-radius: 50%;
-  }
-
-  &[data-icon="user"]::after {
-    left: 2px;
-    bottom: 1px;
-    width: 12px;
-    height: 7px;
-    border: 2px solid currentColor;
-    border-top-left-radius: 999px;
-    border-top-right-radius: 999px;
-  }
-
-  &[data-icon="lock"]::before {
-    left: 4px;
-    top: 0;
-    width: 8px;
-    height: 8px;
-    border: 2px solid currentColor;
-    border-bottom: 0;
-    border-radius: 999px 999px 0 0;
-  }
-
-  &[data-icon="lock"]::after {
-    left: 2px;
-    top: 8px;
-    width: 12px;
-    height: 9px;
-    border: 2px solid currentColor;
-    border-radius: 3px;
-  }
-
-  &[data-icon="school"]::before {
-    left: 1px;
-    top: 4px;
-    width: 14px;
-    height: 9px;
-    border: 2px solid currentColor;
-    transform: rotate(30deg) skewX(-20deg);
-  }
-
-  &[data-icon="shield"]::before {
-    left: 3px;
-    top: 1px;
-    width: 10px;
-    height: 13px;
-    border: 2px solid currentColor;
-    border-radius: 7px 7px 4px 4px;
-    transform: perspective(12px) rotateX(-14deg);
-  }
-
-  &[data-icon="text"]::before {
-    left: 1px;
-    top: 4px;
-    width: 14px;
-    height: 2px;
-    background: currentColor;
-    box-shadow: 0 5px 0 currentColor, 0 10px 0 currentColor;
+  img {
+    display: block;
+    width: 18.333px;
+    height: 12.5px;
   }
 `;
 
-const ActionBadge = styled.span`
+const ActionBadge = styled.img`
   width: 22px;
-  height: 22px;
-  border: 3px solid currentColor;
-  border-radius: 50%;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 4px;
-    border-radius: 50%;
-    border: 2px solid currentColor;
-  }
+  height: 21px;
+  display: block;
+  object-fit: contain;
 `;
 
 const FieldIconImage = styled.img`
   display: block;
   flex: 0 0 auto;
   margin-top: 1px;
-`;
-
-const ToggleButton = styled.button`
-  display: flex;
-  flex: 0 0 auto;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: inherit;
-  opacity: 0.4;
-  cursor: pointer;
-
-  img {
-    display: block;
-  }
 `;
 
 const CompactRow = styled.div`

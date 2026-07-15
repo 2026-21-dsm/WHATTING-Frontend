@@ -1,0 +1,22 @@
+- main [ref=f24e4]:
+  - generic [ref=f24e5]: 9:41
+  - img "왓팅" [ref=f24e12]
+  - generic [ref=f24e14]:
+    - heading "로그인" [level=1] [ref=f24e15]
+    - generic [ref=f24e16]:
+      - generic [ref=f24e17]:
+        - generic [ref=f24e18]:
+          - generic [ref=f24e19]: 이름
+          - textbox "이름" [ref=f24e22]:
+            - /placeholder: 실명 입력
+        - generic [ref=f24e23]:
+          - generic [ref=f24e24]: 비밀번호
+          - generic [ref=f24e25]:
+            - textbox "비밀번호" [ref=f24e27]:
+              - /placeholder: 8자 이상 입력
+            - button "비밀번호 보기" [ref=f24e28]
+      - button "로그인" [ref=f24e30]
+      - paragraph [ref=f24e31]:
+        - text: 계정이 없으신가요?
+        - link "회원가입" [ref=f24e32] [cursor=pointer]:
+          - /url: /teacher/signup

@@ -1,0 +1,90 @@
+- main [ref=e4]:
+  - generic [ref=e5]: 9:41
+  - heading "최종 결과" [level=1] [ref=e12]
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - heading "화재 대피 훈련" [level=2] [ref=e16]
+      - paragraph [ref=e17]: "시작: 14:02:45 | 경과: 00:08:12"
+      - generic [ref=e18]:
+        - link "훈련 편집" [ref=e19] [cursor=pointer]:
+          - /url: /teacher/alert/type
+        - link "오류 보고" [ref=e20] [cursor=pointer]:
+          - /url: /teacher/active
+    - generic [ref=e21]:
+      - heading "실시간 인원 현황" [level=2] [ref=e23]
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e27]: 도움 요청
+          - strong [ref=e28]: "02"
+        - generic [ref=e29]:
+          - generic [ref=e30]: 응답 없음
+          - strong [ref=e31]: "08"
+        - generic [ref=e32]:
+          - generic [ref=e33]: 대피 중
+          - strong [ref=e34]: "10"
+        - generic [ref=e35]:
+          - generic [ref=e36]: 대피 완료
+          - strong [ref=e37]: "10"
+      - generic [ref=e39]:
+        - generic [ref=e40]: 대피 진행률
+        - strong [ref=e41]: 71%
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - heading "즉각 지원 필요 (2)" [level=2] [ref=e45]
+        - generic [ref=e46]:
+          - generic [ref=e48]:
+            - generic [ref=e49]:
+              - strong [ref=e50]: 권수현
+              - generic [ref=e51]: 2-1
+            - paragraph [ref=e52]:
+              - text: 도움 필요
+              - generic [ref=e53]: "· 마지막 위치: 과학실"
+          - link "상태 확인" [ref=e54] [cursor=pointer]:
+            - /url: /teacher/help/detail
+        - generic [ref=e55]:
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - strong [ref=e59]: 이지성
+              - generic [ref=e60]: 2-3
+            - paragraph [ref=e61]:
+              - text: 부상 신고
+              - generic [ref=e62]: "· 부상 부위: 발목"
+          - link "상태 확인" [ref=e63] [cursor=pointer]:
+            - /url: /teacher/help/detail
+      - generic [ref=e64]:
+        - heading "대피 중 (1)" [level=2] [ref=e65]
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - strong [ref=e70]: 박정우
+            - generic [ref=e71]: 2-1
+          - paragraph [ref=e72]: 대피 중
+      - generic [ref=e73]:
+        - heading "응답 대기 중 (1)" [level=2] [ref=e74]
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - strong [ref=e79]: 박정우
+            - generic [ref=e80]: 2-1
+          - paragraph [ref=e81]: 응답 없음
+      - generic [ref=e82]:
+        - heading "대피 완료 (2)" [level=2] [ref=e83]
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - strong [ref=e88]: 박정우
+            - generic [ref=e89]: 2-1
+          - paragraph [ref=e90]: 안전 확인됨
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - strong [ref=e95]: 박정우
+            - generic [ref=e96]: 2-1
+          - paragraph [ref=e97]: 안전 확인됨
+    - link "최종 확인 후 끝내기" [ref=e98] [cursor=pointer]:
+      - /url: /teacher/home
+  - navigation "교사 하단 탭" [ref=e99]:
+    - link "홈" [ref=e100] [cursor=pointer]:
+      - /url: /teacher/home
+    - link "명단" [ref=e103] [cursor=pointer]:
+      - /url: /teacher/students
+    - link "! 알림" [ref=e106] [cursor=pointer]:
+      - /url: /teacher/help
+      - generic [ref=e107]: "!"
+      - generic [ref=e108]: 알림

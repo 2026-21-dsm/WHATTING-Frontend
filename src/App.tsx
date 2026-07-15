@@ -4,6 +4,7 @@ import {
   TeacherAlertCreatePage,
   TeacherAlertDashboardPage,
   TeacherAlertTypePage,
+  TeacherDashboardPage,
   TeacherHelpDetailPage,
   TeacherHelpRequestsPage,
   TeacherHomePage,
@@ -38,7 +39,9 @@ function App() {
         <Route path="/teacher/students" element={<TeacherStudentListPage />} />
         <Route path="/teacher/students/confirm" element={<TeacherStudentConfirmPage />} />
         <Route path="/teacher/help" element={<TeacherHelpRequestsPage />} />
-        <Route path="/teacher/help/detail" element={<TeacherHelpDetailPage />} />
+        <Route path="/teacher/help/detail" element={<Navigate to="/teacher/help" replace />} />
+        <Route path="/teacher/help/:helpRequestId" element={<TeacherHelpDetailPage />} />
+        <Route path="/teacher/dashboard" element={<TeacherDashboardPage />} />
         <Route path="/teacher/result" element={<TeacherResultPage />} />
 
         <Route path="/student/login" element={<LoginPage signupRole="student" />} />

@@ -1,0 +1,15 @@
+- main [ref=f26e4]:
+  - generic [ref=f26e5]: 9:41
+  - heading "대시보드" [level=1] [ref=f26e12]
+  - generic [ref=f26e14]:
+    - generic [ref=f26e15]:
+      - heading "활성 경보 없음" [level=2] [ref=f26e16]
+      - paragraph [ref=f26e17]: "시작: - | 최근 업데이트: -"
+    - strong [ref=f26e19]: 대시보드 데이터를 불러올 수 없습니다.
+  - navigation "교사 하단 탭" [ref=f26e20]:
+    - link "홈" [ref=f26e21] [cursor=pointer]:
+      - /url: /teacher/home
+    - link "명단" [ref=f26e24] [cursor=pointer]:
+      - /url: /teacher/students
+    - link "대시보드" [ref=f26e27] [cursor=pointer]:
+      - /url: /teacher/dashboard

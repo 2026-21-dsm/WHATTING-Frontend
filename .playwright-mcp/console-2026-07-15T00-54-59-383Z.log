@@ -1,0 +1,30 @@
+[      97ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=c3b085ac:20100
+[     260ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/api/v1/alerts/active:0
+[     260ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/api/v1/alerts/active:0
+[    5267ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/api/v1/alerts/active:0
+[   10268ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/api/v1/alerts/active:0
+[   15263ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/api/v1/alerts/active:0
+[   20277ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/api/v1/alerts/active:0
+[   25299ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=c3b085ac:20100
+[   25410ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/api/v1/alerts/active:0
+[   25413ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/api/v1/alerts/active:0
+[   26716ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/alert-drill.svg?t=1784076925283&import:0
+[   26716ms] [ERROR] [vite] Failed to reload /src/pages/teacher/TeacherPages.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:5173/@vite/client:881
+[   26737ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/alert-inspection.svg?t=1784076925385&import:0
+[   26738ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/alert-real.svg?t=1784076925386&import:0
+[   26759ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/emergency-bell.svg?t=1784076925388&import:0
+[   26786ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/home-status-check.svg?t=1784076925396&import:0
+[   26792ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/meta-calendar.svg?t=1784076925397&import:0
+[   26793ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "image/svg+xml". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://127.0.0.1:5173/src/assets/icons/meta-clock.svg?t=1784076925398&import:0
+[   27597ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:5173/?token=igCedD-in4KD' failed: Error during WebSocket handshake: Unexpected response code: 400 @ http://127.0.0.1:5173/@vite/client:801
+[   27664ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=c3b085ac:20100
+[   27788ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/api/v1/alerts/active:0
+[   27791ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/api/v1/alerts/active:0
+[   27908ms] [ERROR] WebSocket connection to 'ws://localhost:5173/?token=igCedD-in4KD' failed: Error during WebSocket handshake: Unexpected response code: 400 @ http://127.0.0.1:5173/@vite/client:814
+[   27908ms] [ERROR] [vite] failed to connect to websocket.
+your current setup:
+  (browser) 127.0.0.1:5173/ <--[HTTP]--> localhost:5173/ (server)
+  (browser) 127.0.0.1:5173/ <--[WebSocket (failing)]--> localhost:5173/ (server)
+Check out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr . @ http://127.0.0.1:5173/@vite/client:829
+[   32804ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/api/v1/alerts/active:0
+[   37825ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/api/v1/alerts/active:0

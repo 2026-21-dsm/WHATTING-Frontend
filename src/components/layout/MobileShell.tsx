@@ -1,10 +1,21 @@
 import type { ReactNode } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "@emotion/styled";
+import { useNow } from "../../hooks/useNow";
 import { theme } from "../../styles/theme";
 import whattingLogo from "../../../whatting_logo.svg";
+import profileIcon from "../../assets/icons/profile.svg";
+import statusBatteryIcon from "../../assets/icons/status-battery.svg";
+import statusSignalIcon from "../../assets/icons/status-signal.svg";
+import statusWifiIcon from "../../assets/icons/status-wifi.svg";
+import tabAlertActiveIcon from "../../assets/icons/tab-alert-active.svg";
+import tabAlertIcon from "../../assets/icons/tab-alert.svg";
+import tabHomeActiveIcon from "../../assets/icons/tab-home-active.svg";
+import tabHomeIcon from "../../assets/icons/tab-home.svg";
+import tabStudentsActiveIcon from "../../assets/icons/tab-students-active.svg";
+import tabStudentsIcon from "../../assets/icons/tab-students.svg";
 
-type BottomTab = "home" | "students" | "alerts";
+type BottomTab = "home" | "students" | "alerts" | "dashboard";
 type ShellRole = "teacher" | "student";
 
 type MobileShellProps = {
@@ -17,16 +28,74 @@ type MobileShellProps = {
   role?: ShellRole;
 };
 
-const roleTabItems: Record<ShellRole, Array<{ key: BottomTab; label: string; to: string }>> = {
+type TabItem = {
+  key: BottomTab;
+  label: string;
+  to: string;
+  icon: string;
+  activeIcon: string;
+  iconWidth: number;
+  iconHeight: number;
+};
+
+const roleTabItems: Record<ShellRole, TabItem[]> = {
   teacher: [
-    { key: "home", label: "홈", to: "/teacher/active" },
-    { key: "students", label: "명단", to: "/teacher/students" },
-    { key: "alerts", label: "알림", to: "/teacher/help" },
+    {
+      key: "home",
+      label: "홈",
+      to: "/teacher/home",
+      icon: tabHomeIcon,
+      activeIcon: tabHomeActiveIcon,
+      iconWidth: 18,
+      iconHeight: 18,
+    },
+    {
+      key: "students",
+      label: "명단",
+      to: "/teacher/students",
+      icon: tabStudentsIcon,
+      activeIcon: tabStudentsActiveIcon,
+      iconWidth: 22,
+      iconHeight: 16,
+    },
+    {
+      key: "dashboard",
+      label: "대시보드",
+      to: "/teacher/dashboard",
+      icon: tabAlertIcon,
+      activeIcon: tabAlertActiveIcon,
+      iconWidth: 22,
+      iconHeight: 19,
+    },
   ],
   student: [
-    { key: "home", label: "홈", to: "/student/home" },
-    { key: "alerts", label: "알림", to: "/student/alerts" },
-    { key: "students", label: "도움 요청", to: "/student/help/new" },
+    {
+      key: "home",
+      label: "홈",
+      to: "/student/home",
+      icon: tabHomeIcon,
+      activeIcon: tabHomeActiveIcon,
+      iconWidth: 18,
+      iconHeight: 18,
+    },
+    {
+      key: "alerts",
+      label: "알림",
+      to: "/student/alerts",
+      icon: tabAlertIcon,
+      activeIcon: tabAlertActiveIcon,
+      iconWidth: 22,
+      iconHeight: 19,
+    },
+    {
+      key: "students",
+      label: "도움 요청",
+      to: "/student/help/new",
+      icon: tabStudentsIcon,
+      activeIcon: tabStudentsActiveIcon,
+      iconWidth: 22,
+      iconHeight: 16,
+    },
   ],
 };
 
@@ -44,29 +113,36 @@ export function MobileShell({
   role = "teacher",
 }: MobileShellProps) {
   return (
-    <Phone data-tall={tall}>
+    <Phone data-tall={tall} data-with-nav={Boolean(bottomTab)}>
       <StatusBar />
       {(showBrand || title) && (
         <Header>
           {title ? <HeaderTitle>{title}</HeaderTitle> : <BrandLogo src={whattingLogo} alt="왓팅" />}
-          {showProfile && <ProfileButton aria-label="내 정보" />}
+          {showProfile && (
+            <ProfileButton aria-label="내 정보">
+              <img src={profileIcon} alt="" aria-hidden="true" />
+            </ProfileButton>
+          )}
         </Header>
       )}
       <Content data-with-nav={Boolean(bottomTab)}>{children}</Content>
       {bottomTab && <BottomNavigation active={bottomTab} role={role} />}
-      <HomeIndicator />
+      {!bottomTab && <HomeIndicator />}
     </Phone>
   );
 }
 
 function StatusBar() {
+  const now = useNow();
+  const time = `${now.getHours()}:${String(now.getMinutes()).padStart(2, "0")}`;
+
   return (
     <Status aria-hidden="true">
-      <span>9:41</span>
+      <span>{time}</span>
       <StatusIcons>
-        <SignalIcon />
-        <WifiIcon />
-        <BatteryIcon />
+        <SignalIcon src={statusSignalIcon} alt="" aria-hidden="true" />
+        <WifiIcon src={statusWifiIcon} alt="" aria-hidden="true" />
+        <BatteryIcon src={statusBatteryIcon} alt="" aria-hidden="true" />
       </StatusIcons>
     </Status>
   );
@@ -75,16 +151,21 @@ function StatusBar() {
 function BottomNavigation({ active, role }: { active: BottomTab; role: ShellRole }) {
   return (
     <BottomNav aria-label={role === "student" ? "학생 하단 탭" : "교사 하단 탭"}>
-      {roleTabItems[role].map((item) => (
-        <BottomNavLink
-          key={item.key}
-          to={item.to}
-          className={active === item.key ? "active" : undefined}
-        >
-          <TabGlyph data-tab={item.key} />
-          <span>{item.label}</span>
-        </BottomNavLink>
-      ))}
+      {roleTabItems[role].map((item) => {
+        const isActive = active === item.key;
+
+        return (
+          <BottomNavLink key={item.key} to={item.to} className={isActive ? "active" : undefined}>
+            <TabIcon
+              src={isActive ? item.activeIcon : item.icon}
+              alt=""
+              aria-hidden="true"
+              style={{ width: item.iconWidth, height: item.iconHeight }}
+            />
+            <span>{item.label}</span>
+          </BottomNavLink>
+        );
+      })}
     </BottomNav>
   );
 }
@@ -103,31 +184,29 @@ const Stage = styled.div`
 
 const Phone = styled.main`
   width: min(100vw, 390px);
-  min-height: 844px;
-  max-height: min(100vh, 920px);
+  height: min(100vh, 844px);
+  min-height: min(100vh, 844px);
   position: relative;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   background: ${theme.colors.bg};
   color: ${theme.colors.text};
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 30px 90px rgba(0, 0, 0, 0.55);
 
   &[data-tall="true"] {
-    overflow-y: auto;
-    scrollbar-width: none;
-  }
-
-  &[data-tall="true"]::-webkit-scrollbar {
-    display: none;
+    overflow: hidden;
   }
 
   @media (max-width: 520px) {
     width: 100vw;
-    min-height: 100vh;
-    max-height: none;
+    height: 100dvh;
+    min-height: 100dvh;
   }
 `;
 
 const Status = styled.div`
+  flex: 0 0 44px;
   height: 44px;
   display: flex;
   align-items: center;
@@ -145,73 +224,29 @@ const StatusIcons = styled.div`
   gap: 6px;
 `;
 
-const SignalIcon = styled.span`
+const SignalIcon = styled.img`
+  width: 20px;
+  height: 14px;
+  display: block;
+  object-fit: contain;
+`;
+
+const WifiIcon = styled.img`
   width: 16px;
-  height: 12px;
-  display: inline-block;
-  background:
-    linear-gradient(to top, #fff 38%, transparent 38%) 0 7px / 3px 5px no-repeat,
-    linear-gradient(to top, #fff 58%, transparent 58%) 5px 5px / 3px 7px no-repeat,
-    linear-gradient(to top, #fff 78%, transparent 78%) 10px 3px / 3px 9px no-repeat;
+  height: 14px;
+  display: block;
+  object-fit: contain;
 `;
 
-const WifiIcon = styled.span`
-  width: 14px;
-  height: 11px;
-  position: relative;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    border: 2px solid #fff;
-    border-color: #fff transparent transparent transparent;
-    border-radius: 999px;
-    transform: translateX(-50%);
-  }
-
-  &::before {
-    width: 14px;
-    height: 14px;
-    top: 1px;
-  }
-
-  &::after {
-    width: 7px;
-    height: 7px;
-    top: 5px;
-  }
-`;
-
-const BatteryIcon = styled.span`
-  width: 22px;
-  height: 11px;
-  border: 1.5px solid #fff;
-  border-radius: 2px;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 2px 4px 2px 2px;
-    background: #fff;
-    border-radius: 1px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: -4px;
-    top: 3px;
-    width: 2px;
-    height: 5px;
-    background: #fff;
-    border-radius: 0 2px 2px 0;
-  }
+const BatteryIcon = styled.img`
+  width: 25px;
+  height: 14px;
+  display: block;
+  object-fit: contain;
 `;
 
 const Header = styled.header`
+  flex: 0 0 64px;
   height: 64px;
   display: flex;
   align-items: center;
@@ -235,51 +270,43 @@ const HeaderTitle = styled.h1`
 `;
 
 const ProfileButton = styled.button`
-  width: 34px;
-  height: 34px;
-  border: 2px solid ${theme.colors.textSoft};
-  border-radius: 50%;
-  position: relative;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
   background: transparent;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background: ${theme.colors.textSoft};
-  }
-
-  &::before {
-    top: 7px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-  }
-
-  &::after {
-    bottom: 6px;
-    width: 19px;
-    height: 9px;
-    border-radius: 999px 999px 4px 4px;
+  img {
+    display: block;
+    width: 32px;
+    height: 32px;
   }
 `;
 
 const Content = styled.div`
-  min-height: calc(100% - 108px);
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
   padding-bottom: 40px;
+  scrollbar-width: none;
 
   &[data-with-nav="true"] {
-    padding-bottom: 110px;
+    padding-bottom: 24px;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 `;
 
 const BottomNav = styled.nav`
-  position: absolute;
+  position: sticky;
   left: 0;
   right: 0;
   bottom: 3px;
+  flex: 0 0 81px;
   height: 81px;
   display: flex;
   align-items: center;
@@ -318,69 +345,10 @@ const BottomNavLink = styled(NavLink)`
   }
 `;
 
-const TabGlyph = styled.span`
-  width: 23px;
-  height: 23px;
-  position: relative;
-
-  &[data-tab="home"]::before {
-    content: "";
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    width: 6px;
-    height: 6px;
-    border: 2px solid currentColor;
-    border-radius: 2px;
-    box-shadow: 11px 0 0 -2px currentColor, 0 11px 0 -2px currentColor,
-      11px 11px 0 -2px currentColor;
-  }
-
-  &[data-tab="students"]::before,
-  &[data-tab="students"]::after {
-    content: "";
-    position: absolute;
-    border: 2px solid currentColor;
-    border-radius: 999px;
-  }
-
-  &[data-tab="students"]::before {
-    width: 8px;
-    height: 8px;
-    left: 7px;
-    top: 2px;
-  }
-
-  &[data-tab="students"]::after {
-    width: 20px;
-    height: 10px;
-    left: 1px;
-    bottom: 2px;
-    border-top-left-radius: 999px;
-    border-top-right-radius: 999px;
-  }
-
-  &[data-tab="alerts"]::before {
-    content: "";
-    position: absolute;
-    left: 3px;
-    top: 1px;
-    width: 0;
-    height: 0;
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-bottom: 19px solid currentColor;
-  }
-
-  &[data-tab="alerts"]::after {
-    content: "!";
-    position: absolute;
-    left: 10px;
-    top: 4px;
-    color: ${theme.colors.bg};
-    font-size: 13px;
-    font-weight: 900;
-  }
+const TabIcon = styled.img`
+  display: block;
+  object-fit: contain;
+  flex: 0 0 auto;
 `;
 
 const HomeIndicator = styled.div`
