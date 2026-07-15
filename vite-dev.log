@@ -3703,3 +3703,415 @@
 [2m오전 10:01:00[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
 [2m오전 10:01:00[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
 [2m오전 10:01:00[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:07:36[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:07:36[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx, /src/components/ui/StudentRoster.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/GlobalStyles.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.app.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/StudentRoster.tsx[22m
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx, /src/components/ui/StudentRoster.tsx[22m
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx, /src/components/layout/MobileShell.tsx[22m
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/GlobalStyles.tsx, /src/pages/teacher/TeacherPages.tsx, /src/components/ui/Controls.tsx, /src/components/layout/MobileShell.tsx, /src/components/ui/StudentRoster.tsx[22m
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/GlobalStyles.tsx[22m
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:07:38[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:07:53[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:07:53[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:07:53[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:07:53[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:08:48[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:08:49[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:08:49[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:08:49[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:08:49[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:08:50[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:08:50[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:08:50[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:08:51[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:08:51[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:08:52[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:08:52[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:08:52[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:08:53[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:08:53[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:08:53[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:11:03[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx, /src/components/ui/StudentRoster.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/GlobalStyles.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/StudentRoster.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx, /src/components/ui/StudentRoster.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx, /src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/GlobalStyles.tsx, /src/pages/teacher/TeacherPages.tsx, /src/components/layout/MobileShell.tsx, /src/components/ui/Controls.tsx, /src/components/ui/StudentRoster.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/GlobalStyles.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.app.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:11:04[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:11:05[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:11:05[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:11:05[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:11:23[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:11:24[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:11:24[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:11:24[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:11:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:11:25[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:11:25[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:11:25[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:11:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:11:26[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:11:26[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:11:26[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:11:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:11:28[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:11:28[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:11:28[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:11:44[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:11:45[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:11:45[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:11:45[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:11:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:11:46[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:11:46[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:11:46[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:11:46[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:11:47[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:11:47[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:11:47[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:11:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:11:48[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:11:48[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:11:48[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:12:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:12:10[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:12:10[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:12:10[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:12:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:12:11[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:12:11[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:12:11[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:12:11[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:12:12[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:12:12[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:12:12[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:12:12[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:12:13[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:12:13[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:12:13[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:12:20[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:12:21[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:12:21[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:12:21[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:12:21[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:12:22[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:12:22[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:12:22[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:12:22[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:12:23[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:12:23[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:12:23[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:12:24[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:12:24[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:12:24[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:12:24[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:12:44[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:12:45[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:12:45[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:12:45[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:12:46[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:12:46[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:12:46[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:12:46[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:12:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:12:48[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:12:48[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:12:48[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:12:48[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:12:49[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:12:49[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:12:49[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:14:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:14:20[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:14:20[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:14:20[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:14:20[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:14:21[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:14:21[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:14:21[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:14:36[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:14:37[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:14:37[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:14:37[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:15:11[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:15:12[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:15:13[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:15:13[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:15:13[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:15:14[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:15:14[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:15:14[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:15:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:15:31[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:15:31[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:15:31[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:15:31[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:15:32[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:15:32[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:15:33[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:15:33[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:15:33[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:15:48[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:15:49[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:15:49[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:15:49[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:16:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx, /src/components/ui/StudentRoster.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/GlobalStyles.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/Controls.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ui/StudentRoster.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/teacher/TeacherPages.tsx, /src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/GlobalStyles.tsx, /src/pages/teacher/TeacherPages.tsx, /src/components/ui/StudentRoster.tsx, /src/components/ui/Controls.tsx, /src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.app.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/MobileShell.tsx[22m
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:16:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:16:28[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:16:28[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:16:28[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:16:29[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:16:29[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:16:29[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:16:29[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:16:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:16:30[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:16:30[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:16:30[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:16:51[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:16:52[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:16:52[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:16:52[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:17:07[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:17:07[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:17:09[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:17:09[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:17:09[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:17:09[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:17:09[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:17:09[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:17:09[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:17:10[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:17:29[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:17:30[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:17:30[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:17:30[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:17:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:17:31[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:17:31[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:17:31[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:17:32[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:17:32[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:17:32[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:17:32[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:17:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:17:34[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:17:34[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:17:34[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:17:44[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:17:44[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:17:44[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:17:44[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:17:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:17:45[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:17:45[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:17:46[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:17:46[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:17:47[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:17:47[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:17:47[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:17:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:17:48[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:17:48[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:17:48[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:18:06[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:18:07[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:18:07[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:18:07[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:18:08[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:18:09[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:18:09[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:18:09[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:18:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:18:10[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:18:10[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:18:10[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:18:11[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:18:12[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:18:12[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:18:12[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:18:12[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:18:13[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:18:13[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:18:13[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:18:14[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:18:14[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:18:14[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:18:15[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:18:15[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:18:16[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:18:16[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:18:16[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:18:16[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:18:17[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:18:17[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:18:17[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:18:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:18:19[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:18:19[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:18:19[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:18:19[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:18:20[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:18:20[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:18:20[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:18:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:18:31[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m오전 10:18:32[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:18:32[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:18:32[22m [36m[1m[vite][22m[39m server restarted.
+[2m오전 10:18:33[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/user/Desktop/frontend/project/WHATTING-Frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m오전 10:18:33[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m오전 10:18:33[22m [36m[1m[vite][22m[39m server restarted.
